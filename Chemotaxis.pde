@@ -1,9 +1,5 @@
-PImage img;
 Bacteria[] bob;
 void setup() {
-  img = loadImage("pizza.png");
-  //https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/6d5ccb722de8ad3.png
-  img.resize(50,50);
   size(500,500);
   background(0);
   bob = new Bacteria[100];
@@ -12,7 +8,7 @@ void setup() {
   }
 }   
 void draw() { 
-  cursor(img);
+  cursor(HAND);
   background(0);
   for(int i = 0; i < bob.length; i++) {
      bob[i].show();
